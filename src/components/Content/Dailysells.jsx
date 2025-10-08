@@ -49,14 +49,14 @@ export default function DailyBestSells() {
   };
 
   return (
-    <div className="px-4 md:px-30 container mx-auto py-5 lg:py-10">
+    <div className="px-4 md:px-10 lg:px-30 container mx-auto py-5 lg:py-10">
       <h2 className="text-2xl font-bold mb-6">Daily Best Sells</h2>
 
       {/* Scroll on mobile, grid on md+ */}
       <div className="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto md:overflow-visible no-scrollbar scroll-smooth">
         {/* Promo Banner */}
         <div
-          className="text-white p-6 rounded-xl flex-shrink-0 w-[340px] md:w-auto min-h-[450px]"
+          className="text-white p-3 lg:p-6 rounded-xl flex-shrink-0 w-[340px] md:w-auto min-h-[450px]"
           style={{
             backgroundImage: 'url(/banner-deal.jpg)',
             backgroundSize: 'cover',
@@ -78,7 +78,7 @@ export default function DailyBestSells() {
         {items.map((item, idx) => (
           <div
             key={idx}
-            className="border border-gray-200 rounded-xl p-4 group hover:border-green-600 transition relative bg-white flex-shrink-0 w-[300px] md:w-auto flex flex-col"
+            className="border border-gray-200 rounded-xl p-3 group hover:border-green-600 transition relative bg-white flex-shrink-0 w-[300px] md:w-auto flex flex-col"
           >
             {/* Product Image + Hover Icons */}
             <div className="relative mb-4">

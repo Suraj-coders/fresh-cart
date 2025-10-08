@@ -141,7 +141,7 @@ useEffect(() => {
     <header className="w-full border-b border-gray-200  bg-white fixed top-0 z-50 md:relative">
       {/* Top banner */}
       <div className="block md:hidden bg-gray-100 text-gray-600 text-sm font-medium  overflow-hidden">
-        <div className="container mx-auto text-center px-4 md:px-30 py-1">
+        <div className="container mx-auto text-center px-4 md:px-10 lg:px-30 py-1">
          <p>Super Value Deals - Save more with coupons</p>
           
           
@@ -191,7 +191,7 @@ useEffect(() => {
     <header className="w-full border-b border-gray-200 bg-white ">
       {/* Top Banner */}
       <div className="bg-gray-100 text-gray-500 text-sm font-medium ">
-        <div className="container mx-auto flex justify-between items-center px-30 py-1">
+        <div className="container mx-auto flex justify-between items-center md:px-10 lg:px-30 py-1">
           <span>Super Value Deals - Save more with coupons</span>
           <div className="flex items-center gap-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
@@ -215,7 +215,7 @@ useEffect(() => {
       </div>
 
       {/* Main Header */}
-      <div className="container mx-auto flex items-center justify-between px-30 py-4">
+      <div className="container mx-auto flex items-center justify-between md:px-10 lg:px-30 py-4">
         {/* Logo */}
         <div className="flex items-center gap-2 text-green-600 font-bold text-2xl">
           <svg xmlns="http://www.w3.org/2000/svg" width="160" height="31" viewBox="0 0 160 31" fill="none">
@@ -281,7 +281,7 @@ useEffect(() => {
       </div>
 
       {/* Navigation + Dropdown */}
-      <nav className="container mx-auto px-30 py-3 text-sm flex items-center gap-6 relative z-10">
+      <nav className="container mx-auto md:px-10 lg:px-30 py-3 text-sm flex items-center gap-6 relative z-10">
         {/* All Departments Dropdown */}
         <div
           className="relative"

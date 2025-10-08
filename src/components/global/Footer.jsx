@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 export default function Footer() {
   return (
     <footer className="bg-gray-100 text-sm text-gray-900 mt-10 pb-5">
-      <div className="max-w-7xl mx-auto container px-4 lg:px-10  pt-10 lg:pt-20 grid grid-cols-2 md:grid-cols-6  gap-6">
+      <div className="max-w-7xl mx-auto container px-4 md:px-8 lg:px-10  pt-10 lg:pt-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  gap-6">
         {/* Categories */}
         <div>
           <h4 className="font-semibold  mb-4">Categories</h4>
@@ -89,15 +89,15 @@ export default function Footer() {
           {/* Payment Partners */}
           <div className="flex items-center gap-2 text-xs">
             <span className="font-medium">Payment Partners</span>
-            <img src="/images/amazonpay.svg" alt="Amazon Pay" className="h-8" />
-            <img src="/images/american-express.svg" alt="Amex" className="h-8" />
-            <img src="/images/mastercard.svg" alt="MasterCard" className="h-8" />
-            <img src="/images/paypal.svg" alt="PayPal" className="h-8" />
-            <img src="/images/visa.svg" alt="Visa" className="h-8" />
+            <img src="/images/amazonpay.svg" alt="Amazon Pay" className="h-7 md:h-8" />
+            <img src="/images/american-express.svg" alt="Amex" className="h-7 md:h-8" />
+            <img src="/images/mastercard.svg" alt="MasterCard" className="h-7 md:h-8" />
+            <img src="/images/paypal.svg" alt="PayPal" className="h-7 md:h-8" />
+            <img src="/images/visa.svg" alt="Visa" className="h-7 md:h-8" />
           </div>
 
          {/* App Links */}
-<div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 text-center">
+<div className="flex flex-col lg:flex-row md:items-center gap-2 md:gap-4 text-center">
   <p className="text-gray-900 font-medium">Get deliveries with FreshCart</p>
   <div className="flex justify-center gap-2">
     <img src="/images/appstore-btn.svg" alt="App Store" className="h-10" />
@@ -109,7 +109,7 @@ export default function Footer() {
       </div>
 
       {/* Copyright & Social */}
-      <div className="max-w-7xl container  mx-auto px-10 py-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500  border-t border-gray-200">
+      <div className="max-w-7xl container  mx-auto px-10 py-6 flex flex-col lg:flex-row justify-between items-center text-xs text-gray-500  border-t border-gray-200">
         <p>© 2022 - 2025 FreshCart eCommerce HTML Template. All rights reserved. Powered by <span className="text-green-500">Codescandy</span>.</p>
         <div className="flex space-x-4 mt-2 md:mt-0 items-center">
             <p className='text-gray-600 font-semibold'>Follow us on</p>

@@ -195,7 +195,7 @@ const ProductCard = ({ product }) => (
 );
 
 const PopularProducts = () => (
-  <div className="px-4 md:px-30 container mx-auto py-2 md:py-10">
+  <div className="px-4 md:px-10 lg:px-30 container mx-auto py-2 md:py-10">
     <h2 className="text-2xl font-semibold mb-6">Popular Products</h2>
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 lg:gap-4">
       {products.map((product) => (
