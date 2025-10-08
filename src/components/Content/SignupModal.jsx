@@ -2,8 +2,20 @@
 
 import { IoMdClose } from 'react-icons/io';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 export default function SignUpModal({ isOpen, onClose }) {
+
+  useEffect(() => {
+      if (isOpen) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+      return () => {
+        document.body.style.overflow = '';
+      };
+    }, [isOpen]);
   if (!isOpen) return null;
 
   return (

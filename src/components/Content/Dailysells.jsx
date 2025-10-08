@@ -49,7 +49,7 @@ export default function DailyBestSells() {
   };
 
   return (
-    <div className="px-4 md:px-10 container mx-auto py-5 lg:py-10">
+    <div className="px-4 md:px-30 container mx-auto py-5 lg:py-10">
       <h2 className="text-2xl font-bold mb-6">Daily Best Sells</h2>
 
       {/* Scroll on mobile, grid on md+ */}

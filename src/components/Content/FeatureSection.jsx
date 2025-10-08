@@ -32,7 +32,7 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 px-4 lg:px-10 py-5 lg:py-10 bg-white container mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 px-4 lg:px-30 py-5 lg:py-10 bg-white container mx-auto">
       {features.map((feature, idx) => (
         <div key={idx} className="flex flex-col justify-between space-x-2">
           {/* Icon */}
