@@ -18,7 +18,7 @@ const BannerCard = ({ title, subtitle, image, alt }) => (
 
 export default function BannerSection() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 px-5 lg:px-10 container mx-auto py:5 lg:py-10 bg-white">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 px-5 lg:px-10 container mx-auto py:5 lg:py-10 bg-white overflow-hidden ">
       <BannerCard
         title="Fruits & Vegetables"
         subtitle="Get Upto 30% Off"

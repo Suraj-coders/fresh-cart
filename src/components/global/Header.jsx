@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FaHeart, FaUser, FaShoppingBag } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
@@ -89,6 +89,18 @@ const handleRemove = (index) => {
   setCartItems(updated);
 };
 
+useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileMenuOpen]);
+
+
 
   const navConfig = [
     {
@@ -126,15 +138,24 @@ const handleRemove = (index) => {
 
   return (
   <>
-    <header className="w-full border-b border-gray-200  bg-white sticky top-0 right-0 left-0 z-50 md:relative">
+    <header className="w-full border-b border-gray-200  bg-white fixed top-0 z-50 md:relative">
       {/* Top banner */}
-      <div className="block md:hidden bg-gray-100 text-gray-600 text-sm font-medium ">
+      <div className="block md:hidden bg-gray-100 text-gray-600 text-sm font-medium  overflow-hidden">
         <div className="container mx-auto text-center px-4 md:px-10 py-1">
          <p>Super Value Deals - Save more with coupons</p>
           
           
         </div>
       </div>
+
+      <div 
+        className={`md:hidden fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
+          isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`} 
+        onClick={() => setIsMobileMenuOpen(false)}
+      />
+
+
 
       {/* Mobile Header Layout */}
       <div className="block md:hidden px-4 pt-3 py-2  ">
@@ -329,9 +350,9 @@ const handleRemove = (index) => {
       </div>
 
       {/* Mobile Drawer */}
-     {/* Mobile Drawer */}
+     
 <div
-  className={`md:hidden fixed top-0 left-0 w-80 h-screen z-50 bg-white overflow-y-auto border-r border-gray-200 transform transition-transform duration-300 ${
+  className={`md:hidden fixed top-0 left-0 bottom-0 w-80 h-full z-50 bg-white overflow-y-auto border-r border-gray-200 transform transition-transform duration-300 ${
     isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
   }`}
 >
